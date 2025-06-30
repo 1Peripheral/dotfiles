@@ -48,3 +48,5 @@ vim.api.nvim_set_keymap('i', '\'', '\'\'<left>', { noremap = true})
 vim.api.nvim_set_keymap('i', '{', '{}<left>', { noremap = true})
 vim.api.nvim_set_keymap('i', '(', '()<left>', { noremap = true})
 vim.api.nvim_set_keymap('i', '[', '[]<left>', { noremap = true})
+
+vim.diagnostic.config({ virtual_text = true })

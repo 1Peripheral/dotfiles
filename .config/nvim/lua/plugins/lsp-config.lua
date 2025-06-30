@@ -26,7 +26,6 @@ return {
     end,
 
     config = function()
-      -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
       local lspconfig = require("lspconfig")
@@ -45,6 +44,10 @@ return {
       })
 
       lspconfig.html.setup({
+        capabilities = capabilities
+      })
+
+      lspconfig.svelte.setup({
         capabilities = capabilities
       })
 
